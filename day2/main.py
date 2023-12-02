@@ -27,8 +27,8 @@ def is_game_possible(game_extractions: list[dict[str, int]], boundaries: dict[st
 
 def solve(games, boundaries) -> int:
     id_sum = 0
-    for id, exrtactions_list in games.items():
-        is_possible = is_game_possible(exrtactions_list, boundaries)
+    for id, extractions_list in games.items():
+        is_possible = is_game_possible(extractions_list, boundaries)
         if is_possible:
             id_sum += id
     return id_sum

@@ -1,4 +1,4 @@
-from main import is_game_possible, is_extraction_possible, solve
+from main import is_game_possible, solve
 from parse_input import parse_input_file
 
 
@@ -44,6 +44,7 @@ def test_solve():
 
 def run_tests():
     test_is_game_possible()
+    test_solve()
 
 
 if __name__ == '__main__':
